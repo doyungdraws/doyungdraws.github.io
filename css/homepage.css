@@ -1,0 +1,245 @@
+
+/*full body of the site*/
+
+.preload { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+body {
+  background-color: #FFFFFF; 
+}
+
+#title-top-text {
+  margin-top: 35px;
+}
+
+.body-wrapper {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+  background-color: #FFFFFF;  
+}
+
+.width-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+/*------- Head Photo + Text Shenanigans --------------------------*/
+
+.side-photo {
+  height: 700px;
+  position: relative;
+}
+
+.name-photo {
+  height: 110px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.goodies {
+  position: absolute;
+  top:160px;
+  margin-left: 7%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.header-text-span {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+span.spacer {
+  padding: 0 3px;
+}
+
+#wrapper {
+  padding: 40px;
+}
+
+#sidebar-wrapper {
+  width: 160px;
+}
+
+#main-page {
+  padding-top: 100px;
+}
+
+/*-------- Sidebar Shenanigans --------------------------*/
+
+.sidebar-nav {
+  list-style-image: none;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  color: #333333;
+  display: inline-block;
+}
+
+/*-- Stuff like "DESIGN:" "ART:" "FEATURED:" etc --*/
+.sidebar-list {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: #333333;
+  font-family: 'Montserrat';
+}
+
+.sidebar-list-links {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.image-button {
+  height: 125px;
+  padding-right:4px;
+}
+
+.image-button-small {
+  height: 100px;
+  padding-right: 25px;
+}
+
+.list-link-set {
+  width: 210px;
+  clear:both;
+}
+
+.list-link-image {
+  float: left;
+}
+
+.list-link-set:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*-------- New Sidebar -----------------------*/
+
+.photo-grid {
+  margin: 0.5em auto;
+  padding-left: 0px;
+}
+
+.photo-grid li {
+  border: 0px;
+  display: inline-block;
+  margin: 2em;
+  width: 300px;
+}
+
+.photo-grid img {
+  display: block;
+  height: 100%;
+}
+
+.photo-grid figure {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.photo-grid figcaption {
+  font-family: 'IBM Plex Mono';
+  color: #2D2D2D;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  padding-left: 15px;
+}
+
+.photo-grid figcaption p {
+  display: table-cell;
+  font-size: 20px;
+  position: absolute;
+  top: 100px;
+  width: 310px;
+  line-height: 115%;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+.photo-grid li:hover figcaption {
+  opacity: 0;
+}
+
+/*----the white bar behind the text when you mouse over: ----*/
+/*---
+.header-detail-span {
+  padding: 0px;
+  background-color: #ffffff;
+}
+---*/
+.aboutme {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  background-color: #ff36b0;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.aboutme:link{
+  color: #000000;
+  text-decoration: none;
+} 
+.aboutme:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*-------- Navbar Shenanigans ---------------------------*/
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  background-color: #37474F;
+  height: 70px;
+  width: 70px;
+  padding: 25px 20px;
+}
+
+.navbar-doyung {
+  height: 50px;
+}
+
+.navbar-default .navbar-brand:link{
+  color: #ffffff;
+  background-color: #37474F;
+} 
+.navbar-default .navbar-brand:hover{
+  color: #ffffff;
+  background-color: #37474F;
+}
+
+.navbar-default .navbar-brand:active{
+  color: #ffffff;
+  background-color: #37474F;
+}
+
+.navbar-default .navbar-brand:visited{
+  color: #ffffff;
+  background-color: #37474F;
+}
