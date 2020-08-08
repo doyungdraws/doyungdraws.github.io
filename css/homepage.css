@@ -53,8 +53,12 @@ body {
 
 .figcaption {
   font-family: 'Karla';
+  font-style: italic;
+  font-size: 14px;
   color: #2D2D2D;
   margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
