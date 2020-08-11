@@ -93,6 +93,19 @@ a {
   color: #ff5ebf;
 }
 
+a:hover {
+  color: #ff5ebf;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+  color: #ff5ebf;
+}
+
 .active {
   color: #2D2D2D;
   font-weight: bold;

@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About me</title>
+<!-- Include jQuery -->
+  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- My CSS -->
+    <link href="css/aboutme.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla: 400, 700" rel="stylesheet">
+  </head>
+<!-- **************** END HEAD *********************** -->
+    <div class="navbar-doyung">
+     <a href="index.html" class="navbar-link"><p class="navbar-heading">&lt; Home</p></a>
+    </div>
+    <div id="canvasDiv">
+        <img src="Images/aboutme.jpg" class="header-photo" id="aboutmeimage">
+    </div>
+    <div class="body-wrapper">
+      <p class="section-text">
+      Doyung is a human being who used to help start schools and work with public libraries. You can see all of that and more on his <a href="https://www.doyungl.com/" target="_blank" >other website.</a> Now he illustrates and makes animations. He is *still* looking to buy a Risograph printer (all leads welcome). Enjoy drawing on his face.
+    </div>
+    <div class="footer"></div>
+    <script type='text/javascript'>
+        $(window).load(function () {
+            var canvasWidth = document.getElementById('aboutmeimage').offsetWidth;
+            var canvasHeight = document.getElementById('aboutmeimage').offsetHeight;
+
+            var canvasDiv = document.getElementById('canvasDiv');
+        canvas = document.createElement('canvas');
+        canvas.setAttribute('width', canvasWidth);
+        canvas.setAttribute('height', canvasHeight);
+        canvas.setAttribute('id', 'canvas');
+        canvasDiv.appendChild(canvas);
+        if(typeof G_vmlCanvasManager != 'undefined') {
+            canvas = G_vmlCanvasManager.initElement(canvas);
+        }
+        context = canvas.getContext("2d");
+                $('#canvas').mousedown(function(e){
+          var mouseX = e.pageX - this.offsetLeft;
+          var mouseY = e.pageY - this.offsetTop;
+                
+          paint = true;
+          addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
+          redraw();
+        });
+        $('#canvas').mousemove(function(e){
+          if(paint){
+            addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+            redraw();
+          }
+        });
+        $('#canvas').mouseup(function(e){
+          paint = false;
+        });
+        $('#canvas').mouseleave(function(e){
+          paint = false;
+        });
+        var clickX = new Array();
+        var clickY = new Array();
+        var clickDrag = new Array();
+        var paint;
+
+        function addClick(x, y, dragging)
+        {
+          clickX.push(x);
+          clickY.push(y);
+          clickDrag.push(dragging);
+        }
+        function redraw(){
+          context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+          
+          context.strokeStyle = "#ffffff";
+          context.lineJoin = "round";
+          context.lineWidth = 3;
+                    
+          for(var i=0; i < clickX.length; i++) {        
+            context.beginPath();
+            if(clickDrag[i] && i){
+              context.moveTo(clickX[i-1], clickY[i-1]);
+             }else{
+               context.moveTo(clickX[i]-1, clickY[i]);
+             }
+             context.lineTo(clickX[i], clickY[i]);
+             context.closePath();
+             context.stroke();
+          }
+        }
+        });
+        
+    </script>
+<style>
+  @media only screen and (max-width: 780px) {
+      .body-wrapper {
+            padding-top: 30px;
+            padding-right:12px;
+            padding-left:12px;
+      }
+    }
+ @media only screen and (max-width: 650px) {
+      .header-text {
+        font-size:20px;
+        top: 60px;
+      }
+      .header-text-span {
+        padding:5px;
+      }
+      .header-detail {
+        font-size: 12px;
+        top: 58px;
+      }
+      .header-detail-span {
+        padding: 5px;
+      }
+      .sections {
+        font-size: 14px;
+        line-height: 190%;
+      }
+
+      .header-photo {
+        height: 200px;
+        object-fit: cover;
+      }
+  }
+  </style>
+    
