@@ -27,6 +27,30 @@ body {
   text-align:center;
 }
 
+.body-wrapper {
+  margin-top: 50px;
+  margin-left: 24%;
+  margin-right: 24%;
+  background-color: #FFFFFF; 
+  text-align:center;
+}
+
+.page-title {
+  font-family: 'Karla';
+  font-style: italic;
+  color: #2D2D2D;
+  letter-spacing: 1px;
+}
+
+/*-------- Content --------------------------*/
+.content-photo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 550px;
+}
+
+
 /*-------- New Sidebar -----------------------*/
 
 .photo-grid {
