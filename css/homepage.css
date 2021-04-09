@@ -14,7 +14,7 @@ body {
 /*------- Head Photo + Text Shenanigans --------------------------*/
 
 .name-photo {
-  height: 110px;
+  height: 85px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -27,7 +27,7 @@ body {
 }
 
 .body-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #FFFFFF; 
   text-align:center;
 }
@@ -38,6 +38,13 @@ body {
   font-weight: bold;
   color: #1D1D1D;
   letter-spacing: 1px;
+}
+
+.page-description-med {
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 22px;
+  color: #4D4D4D;
 }
 
 .page-description {
@@ -81,7 +88,18 @@ body {
   padding-left: 0px;
 }
 
+.photo-grid-small {
+  margin: 0.5em auto;
+  padding-left: 0px;
+}
+
 .photo-grid li {
+  border: 0px;
+  display: inline-block;
+  margin: 0px;
+}
+
+.photo-grid-small li {
   border: 0px;
   display: inline-block;
   margin: 0px;
@@ -92,7 +110,18 @@ body {
   height: 300px;
 }
 
+.photo-grid-small img {
+  display: block;
+  height: 275px;
+}
+
 .photo-grid figure {
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+}
+
+.photo-grid-small figure {
   position: relative;
   margin: 0px;
   padding: 5px;
@@ -112,7 +141,7 @@ body {
 /*-------- Navbar Shenanigans ---------------------------*/
 
 .nav-area {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .navbar {
