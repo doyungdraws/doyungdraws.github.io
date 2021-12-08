@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.6738461%" y1="21.9304788%" x2="91.2283216%" y2="92.0677548%" id="linearGradient-1">
+            <stop stop-color="#D900A6" offset="0%"></stop>
+            <stop stop-color="#FFCF34" offset="100%"></stop>
+        </linearGradient>
+        <rect x="0" y="0" width="60" height="60" id="rect-2"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon">
+            <image x="0" y="0" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAIAAAC1nk4lAAAAAXNSR0IArs4c6QAAAKVJREFUaAXt0sEJwDAQxEDH/VfnhpJUoJcwHChfwXKM87xnjfv2uIv/gzv61qslnTQI9HsAjpqSVjlhLGnAUVPSKieMJQ04akpa5YSxpAFHTUmrnDCWNOCoKWmVE8aSBhw1Ja1ywljSgKOmpFVOGEsacNSUtMoJY0kDjpqSVjlhLGnAUVPSKieMJQ04akpa5YSxpAFHTUmrnDCWNOCoKWmVE8ZGSn8sXgJJ/bNJSQAAAABJRU5ErkJggg=="></image>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#rect-2"></use>
+        </g>
+        <path d="M26.2190637,5.36924904 C22.2492677,17.9298789 16.7490165,32.6318676 14.0940398,45.5346305 C13.7136913,47.3830635 17.1107495,43.1736687 18.8738826,42.5011921 C23.9318776,40.5720224 29.3618416,39.7288235 34.4139925,37.7843979 C37.5119605,36.5920803 40.6045039,35.177333 43.2187557,33.1315601 C45.1264426,31.638707 46.7265049,29.6235873 47.6853382,27.3989563 C48.5024646,25.5031058 48.7975517,23.2546339 48.3438344,21.2406418 C47.8171866,18.902921 46.4606743,16.7419716 44.8789854,14.9419227 C38.4086986,7.57838047 24.74512,5 16.5,5 C12,5 8.96206562,7.96221982 10.3249237,9.56557667 C18.7886711,19.5228919 53.4201923,8.26680213 61.1010735,6" id="Path" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel"></path>
+        <path d="M9.52267404,30.9590394 C11.3610811,31.3428729 13.3342204,28.9860785 13.929804,25.694992 C14.5253875,22.4039054 13.51788,19.4247941 11.6794729,19.0409606 C9.84106582,18.6571271 7.86792654,21.0139215 7.27234298,24.305008 C6.67675942,27.5960946 7.68426695,30.5752059 9.52267404,30.9590394 Z" id="Oval" fill="#FFFFFF"></path>
+        <path d="M32.7675435,30.9590394 C34.8685802,31.3428729 37.1235965,28.9860785 37.8042634,25.694992 C38.4849304,22.4039054 37.3334932,19.4247941 35.2324565,19.0409606 C33.1314198,18.6571271 30.8764035,21.0139215 30.1957366,24.305008 C29.5150696,27.5960946 30.6665068,30.5752059 32.7675435,30.9590394 Z" id="Oval" fill="#FFFFFF"></path>
+        <path d="M12,63.0042639 C26.4557856,63.0042639 41,56 49.5,44.5" id="Path-2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"></path>
+    </g>
+</svg>
