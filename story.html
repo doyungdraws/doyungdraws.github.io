@@ -33,14 +33,14 @@
     <div class="storygoodies">
         <div class="body-wrapper">
 
-          <h2 class="page-description-med">1.) Storyboard: No Biggie</h2>
+          <h2 class="page-description-med">Storyboard: No Biggie</h2>
 
           <script async class="speakerdeck-embed" data-id="bb1083e1065b474d9a33b812d7e9e2f5" data-ratio="1.29411764705882" src="//speakerdeck.com/assets/embed.js"></script>
           </br>
           <!-- Modal part-->
-          <img class="modalimg" id="myImg" src="images/nobiggie/1.png" alt="Image 1">
-          <img class="modalimg" id="myImg2" src="images/nobiggie/2.png" alt="Image 2">
-          <img class="modalimg" id="myImg3" src="images/nobiggie/3.png" alt="Image 3">
+          <img class="modalimg" id="myImg" src="images/nobiggie/3.png" alt="Character Design">
+          <img class="modalimg" id="myImg2" src="images/nobiggie/1.png" alt="Thumbnails 1">
+          <img class="modalimg" id="myImg3" src="images/nobiggie/2.png" alt="Thumbnails 2">
 
 
           <!-- The Modal -->
@@ -88,20 +88,35 @@
           span.onclick = function() {
             modal.style.display = "none";
           }
+
+          // Get the modal (IMAGE 3)
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg3");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // closing
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
           </script>     
 
           <!-- End of Modal -->
 
-          <h2 class="page-description-med">2.) Storyboard: Pressure Cooker</h2>
+          <h2 class="page-description-med">Storyboard: Pressure Cooker</h2>
           <script async class="speakerdeck-embed" data-id="bad964b3c9a94e2e9e1d5eb76b355ee1" data-ratio="1.77725118483412" src="//speakerdeck.com/assets/embed.js"></script>
           </br>
           </br>
 
-        	<h2 class="page-description-med">3.) Storyboard: Rally!</h2>
-	        <script async class="speakerdeck-embed" data-id="6e2a658a4a244db5be503d0dca331b19" data-ratio="1.6" src="//speakerdeck.com/assets/embed.js"></script>
-	        </br>
-
-          <h2 class="page-description-med">4.) Class Assignment: Musical Animatic</h2>
+          <h2 class="page-description-med">Class Assignment: Musical Animatic</h2>
           <div class="iframe-container">
             <iframe class="responsive-iframe" src="https://player.vimeo.com/video/720926290?h=028c169f84" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
           </div>
