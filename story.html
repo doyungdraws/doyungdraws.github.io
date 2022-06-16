@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico?">
+
+    <title>Storyboarding</title>
+<!-- Include jQuery -->
+  	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- My CSS -->
+    <link href="css/homepage.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla: 400, 700, 800" rel="stylesheet">
+  </head>
+<!-- **************** END HEAD *********************** -->
+  <body>
+
+    <!-- Main Work in a section shown here-->
+    <h1 id="title-top-text" >
+        <img src='images/doyungname.png'class="name-photo" alt="Doyung Lee"/>
+    </h1>
+    <div class="nav-area">
+        <ul class="navbar">
+          <li><a class="active" href="storyboard.html">Storyboards</a></li>
+          <li><a href="aboutstory.html">About</a></li>
+          <li><a href="https://www.instagram.com/doyungl/" target="_blank">Instagram</a></li>
+        </div>
+    </div>
+    <div class="storygoodies">
+        <div class="body-wrapper">
+
+          <h2 class="page-description-med">1.) Storyboard: No Biggie</h2>
+          <script async class="speakerdeck-embed" data-id="bb1083e1065b474d9a33b812d7e9e2f5" data-ratio="1.29411764705882" src="//speakerdeck.com/assets/embed.js"></script>
+          </br>
+          <!-- Modal part-->
+          <img class="modalimg" id="myImg" src="images/nobiggie/1.png" alt="Image 1" style="width:100%;max-width:300px">
+          <img class="modalimg" id="myImg2" src="images/nobiggie/2.png" alt="Image 2" style="width:100%;max-width:300px">
+
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="close"></div>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>          
+
+          <script>
+          // Get the modal (IMAGE 1)
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // closing
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // Get the modal (IMAGE 2)
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg2");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // closing
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          </script>     
+
+          <!-- End of Modal -->
+
+          <h2 class="page-description-med">2.) Storyboard: Pressure Cooker</h2>
+          <script async class="speakerdeck-embed" data-id="bad964b3c9a94e2e9e1d5eb76b355ee1" data-ratio="1.77725118483412" src="//speakerdeck.com/assets/embed.js"></script>
+          </br>
+          </br>
+
+        	<h2 class="page-description-med">3.) Storyboard: Rally!</h2>
+	        <script async class="speakerdeck-embed" data-id="6e2a658a4a244db5be503d0dca331b19" data-ratio="1.6" src="//speakerdeck.com/assets/embed.js"></script>
+	        </br>
+
+  </div>
+  <div class="footer-zone">
+      ~~~~~~
+      </br>
+      Contact: leedoyung@gmail.com
+    </div>
+  </body>
+  
+<!-- /#wrapper -->
