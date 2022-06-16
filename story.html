@@ -38,9 +38,9 @@
           <script async class="speakerdeck-embed" data-id="bb1083e1065b474d9a33b812d7e9e2f5" data-ratio="1.29411764705882" src="//speakerdeck.com/assets/embed.js"></script>
           </br>
           <!-- Modal part-->
-          <img class="modalimg" id="myImg" src="images/nobiggie/1.png" alt="Image 1" style="width:100%;max-width:250px">
-          <img class="modalimg" id="myImg2" src="images/nobiggie/2.png" alt="Image 2" style="width:100%;max-width:250px">
-          <img class="modalimg" id="myImg3" src="images/nobiggie/3.png" alt="Image 3" style="width:100%;max-width:250px">
+          <img class="modalimg" id="myImg" src="images/nobiggie/1.png" alt="Image 1">
+          <img class="modalimg" id="myImg2" src="images/nobiggie/2.png" alt="Image 2">
+          <img class="modalimg" id="myImg3" src="images/nobiggie/3.png" alt="Image 3">
 
 
           <!-- The Modal -->
@@ -102,7 +102,10 @@
 	        </br>
 
           <h2 class="page-description-med">4.) Class Assignment: Musical Animatic</h2>
-          <iframe src="https://player.vimeo.com/video/720926290?h=028c169f84" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div class="iframe-container">
+            <iframe class="responsive-iframe" src="https://player.vimeo.com/video/720926290?h=028c169f84" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
 
   </div>
   <div class="footer-zone">
@@ -111,5 +114,15 @@
       Contact: leedoyung@gmail.com
     </div>
   </body>
-  
+<style>
+@media only screen and (max-width: 965px){
+  .modal-content {
+    width: 100%;
+  }
+
+  .modalimg {
+    width: 30%;
+  }
+}
+</style>
 <!-- /#wrapper -->
