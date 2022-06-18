@@ -23,6 +23,11 @@ body {
   margin: auto;
   text-align: center;
 }
+
+.stopplease {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align:center;}
 /*------- Head Photo + Text Shenanigans --------------------------*/
 
 .name-photo {
