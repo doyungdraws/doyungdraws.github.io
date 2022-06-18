@@ -101,12 +101,14 @@ body {
   margin: auto;
   display: block;
   width: 100%;
+  max-height: 700px;
   max-width: 900px;
 }
 
 .modalimg {
   width:100%;
-  max-width:250px
+  max-width:250px;
+  max-height:150px;
 }
 
 /* Caption of Modal Image */
